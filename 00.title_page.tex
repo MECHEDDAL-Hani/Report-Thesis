@@ -1,0 +1,76 @@
+\begin{titlepage}
+  \begin{tikzpicture}
+    [remember picture,overlay,inner sep=0,outer sep=0]
+    \draw[cyan,line width=3pt]
+    ([xshift=-2cm,yshift=-2cm]current page.north east)
+    coordinate (A) --([xshift=2.5cm,yshift=-2cm]current page.north west)
+    coordinate (B) --([xshift=2.5cm,yshift=2cm]current page.south west)
+    coordinate (C) --([xshift=-2cm,yshift=2cm]current page.south east)
+    coordinate (D) --cycle;
+  \end{tikzpicture}
+
+  \renewcommand{\baselinestretch}{1.5}
+  \paragraph{
+    \begin{center}
+      \textbf{\large\uppercase{Peoples Democratic Republic of Algeria}
+        \\
+        \large\uppercase{Ministry of Higher Education and Scientific Research}
+        \\
+        \large\uppercase{Ferhat Abbas University Setif 1}}\end{center}}
+  \paragraph{
+    \begin{center}
+      \includegraphics{Logo-UFAS.png}
+      \setlength{\belowcaptionskip}{-8pt}
+    \end{center}
+  }
+
+  \begin{center}
+    \textbf{\large{Computer Science Department}}
+    \vspace{0.2cm}
+    \\
+    \textbf{\large{Data Engineering and Web Technology Specialties}}
+    \vspace{1cm}
+    \\
+    \textbf{\large\uppercase{Master Thesis}}
+  \end{center}
+  % \vspace{0.5cm}
+  \begin{center}
+    \color{cyan}\rule{0.7\textwidth}{2pt}
+  \end{center}
+  \begin{center}
+    \vspace{0.2cm}
+    \textbf{\Large{NoSQL Databases for Geospatial Queries:}}
+    \\
+    \textbf{\Large{Study and Scalability benchmarking}
+    }
+    \vspace{0.2cm}
+  \end{center}
+
+  \begin{center}
+    \color{cyan}\rule{0.7\textwidth}{2pt}
+  \end{center}
+  \vspace{1cm}
+  \begin{center}
+    \begin{minipage}[t]{0.4\textwidth}
+      \begin{flushleft}
+        \large{Author:}\\
+        \begin{itemize}
+          \item [$-$] \large{Sami BOULKENAFET}
+          \item [$-$] \large{Hani MECHEDDAL}
+        \end{itemize}
+      \end{flushleft}
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+      \begin{flushleft}
+        \large{Supervisor:} \\
+        \begin{itemize}
+          \item [$-$] \large{Dr. Lyazid TOUMI}
+        \end{itemize}
+      \end{flushleft}
+
+    \end{minipage}\\[2cm]
+  \end{center}
+  \begin{center}
+    \textbf{\Large{Class of 2021/2022}}
+  \end{center}
+\end{titlepage}

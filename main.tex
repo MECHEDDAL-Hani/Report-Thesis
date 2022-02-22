@@ -1,0 +1,65 @@
+% & -job-name="NoSQL Databases for Geospatial Queries: Study and Scalability benchmarking"
+\documentclass[oneside]{report}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\usepackage[Bjornstrup]{fncychap}
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\makeatletter
+  \renewcommand{\DOCH}{
+    \settowidth{\py}{\CNoV\thechapter}
+    \addtolength{\py}{-10pt}    
+    \fboxsep=0pt
+    \colorbox[gray]{.85}{\rule{0pt}{40pt}\parbox[b]{\textwidth}{\hfill}}
+\kern-\myhi
+    \kern-\py\raise20pt
+    \hbox{\color[gray]{.5}\CNoV\thechapter}%
+\\
+  }
+\makeatother
+
+
+\usepackage{fancyhdr, lastpage}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\lhead{\leftmark}
+\rhead{}
+\fancyfoot{}
+\cfoot{ - \thepage\ -}
+
+\geometry{
+    a4paper,
+    left=30mm,
+    right= 25mm,
+    top=25mm,
+    }
+
+\hypersetup{
+    pdftitle={NoSQL Databases for Geospatial Queries: Study and Scalability benchmarking},
+    pdfsubject={Master Thesis},
+    pdfauthor={Hani MECHEDDAL, Sami BOULKENAFET},
+    pdfkeywords={Index Terms – Benchmarking, Geospatial Queries, MongoDB, NoSQL Databases,
+    Performance Evaluation, Replication, Scalability}
+}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=red,
+}
+
+\begin{document}
+\include{00.title_page.tex}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+\listoftables
+\listoffigures
+% \pagenumbering{arabic}
+
+\end{document}
